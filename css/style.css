@@ -1,20 +1,116 @@
-* {
+/* * {
   border: 1px solid orange;
-}
+} */
 .container {
   display: flex;
   flex-direction: row;
+  box-sizing: border-box;
 }
 
+/* Left Start */
 .left {
 
 }
+/* Left End */
+
+/* Right Start */
+/* Top Start */
 
 .right {
-  /* display: flex; */
+  flex-direction: column; /* IMPORTANT - Make a point of commenting this in and out and see the difference before doing anything : literally before doing anything to style it!! */
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.right .top {
+  flex: auto;
+}
+
+.right .top .logo {
+  width:100%; /* fill the right container */
+}
+
+.right .top h3,
+.right .top .h-rule {
+  text-align: center;
+}
+
+.right .top button {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  background: #27a8cb;
+  color: white;
+}
+/* Form Start */
+form {
+  width:100%;
   flex-direction: column;
 }
 
-.top {
+form input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  margin: 10px 0;
+}
 
+form input[type="submit"] {
+  background: #27a8cb;
+  color: white;
+}
+
+.T-and-C {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Form End */
+
+/* Top End */
+
+/* Middle Start */
+.middle {
+  text-align: center;
+}
+
+.middle p {
+  padding: 20px;
+}
+/* Middle End */
+
+/* Bottom Start */
+.bottom {
+  text-align: center;
+}
+
+.bottom .apps {
+  display: flex;
+  justify-content: center;
+}
+/* Bottom END */
+
+
+/* /Right */
+
+.footer {
+  display: flex;
+  align-items: stretch;
+}
+
+.footer .left {
+  flex-grow:1;
+}
+
+.footer ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  align-items: center;
+}
+
+.footer ul li{
+  padding: 8px;
+  font-weight: bold;
 }
