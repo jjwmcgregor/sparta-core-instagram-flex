@@ -1,15 +1,34 @@
-/* * {
-  border: 1px solid orange;
-} */
+body {
+  background: #f0f0f0;
+  font-family: sans-serif;
+  color: #939393;
+}
+
 .container {
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
+  max-width: 750px; /* Set the max width for responsiveness */
+  margin: 50px auto; /* Center it */
+}
+
+.container .left,
+.container .right  {
+  width: 50%; /* set each half to 50% of total parent width */
+  margin: 0 10px;
 }
 
 /* Left Start */
 .left {
-
+  display: flex;
+  height:100%;
+  width:100%;
+}
+.left img {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  transform: translateY(10%);
 }
 /* Left End */
 
@@ -19,20 +38,48 @@
 .right {
   flex-direction: column; /* IMPORTANT - Make a point of commenting this in and out and see the difference before doing anything : literally before doing anything to style it!! */
   flex-wrap: wrap;
-  padding: 20px;
+  /* padding: 60px; */
+  /* background: #ffffff; */
 }
 
 .right .top {
   flex: auto;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #c6c6c6;
+  border-radius: 2px;
+  padding: 25px;
 }
 
 .right .top .logo {
-  width:100%; /* fill the right container */
+  margin-top: 10px;
+  margin-bottom:0;
+  width:180px;
+}
+
+.right .top h3 {
+  margin-top: 0;
+  color: #939393;
+  font-size: 16px;
 }
 
 .right .top h3,
 .right .top .h-rule {
   text-align: center;
+}
+
+.top h4 {
+  width:100%;
+  text-align:center;
+  border-bottom: 1px solid #939393;
+  line-height:0.01em;
+  margin:25px 0 20px;
+  font-size: 16px;
+}
+
+.top h4 span {
+  background:#fff;
+  padding:0 20px;
 }
 
 .right .top button {
@@ -46,14 +93,19 @@
 form {
   width:100%;
   flex-direction: column;
+  border: #939393 !important;
 }
 
 form input {
   box-sizing: border-box;
   width: 100%;
   padding: 10px;
-  font-size: 18px;
+  font-size: 12px;
   margin: 10px 0;
+}
+
+.form {
+  border: #939393 !important;
 }
 
 form input[type="submit"] {
@@ -63,7 +115,12 @@ form input[type="submit"] {
 
 .T-and-C {
   text-align: center;
-  padding: 20px;
+  padding-top: 15px;
+}
+
+.T-and-C a {
+  text-decoration: none;
+  color:inherit;
 }
 
 /* Form End */
@@ -73,10 +130,19 @@ form input[type="submit"] {
 /* Middle Start */
 .middle {
   text-align: center;
+  background: #ffffff;
+  margin-top: 10px;
+  border: 1px solid #c6c6c6;
+  border-radius: 2px;
 }
 
 .middle p {
-  padding: 20px;
+  padding: 15px;
+}
+
+.middle a {
+  text-decoration: none;
+  color:#27a8cb;
 }
 /* Middle End */
 
@@ -85,7 +151,13 @@ form input[type="submit"] {
   text-align: center;
 }
 
+.bottom p {
+  margin-bottom: 0;
+  color: #585858
+}
+
 .bottom .apps {
+  margin-top: 0;
   display: flex;
   justify-content: center;
 }
@@ -97,6 +169,11 @@ form input[type="submit"] {
 .footer {
   display: flex;
   align-items: stretch;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #3b3c55;
 }
 
 .footer .left {

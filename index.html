@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Instagram with Flexbox</title>
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 </head>
 <body>
 
@@ -16,30 +17,31 @@
         <img class="logo" src="./img/logo.png" alt="">
         <h3>Sign up to see photos and videos from your friends</h3>
         <button class="btn">
-          <i class=""></i>
+          <i class="fab fa-facebook"></i>
           Log in with Facebook
         </button>
         <div>
-          <h4 class="h-rule">OR</h4>
+          <h4 class="h-rule"><span>OR</span></h4>
         </div>
-      </div>
-      <form class="">
-        <input placeholder="Mobile Number or Email">
-        <br>
-        <input placeholder="Full Name">
-        <br>
-        <input placeholder="Username">
-        <br>
-        <input placeholder="Password">
-        <br>
-        <input type="submit" value="Sign Up">
-        <br>
-        <p class="T-and-C">
-          By signing up you agree to our
+
+        <form class="form">
+          <input id="email" type="text" placeholder="Mobile Number or Email">
           <br>
-          <a href="">Terms and Privacy Policy</a>
-        </p>
-      </form>
+          <input type="text" placeholder="Full Name">
+          <br>
+          <input type="text" placeholder="Username">
+          <br>
+          <input type="text" placeholder="Password">
+          <br>
+          <input type="submit" value="Sign Up">
+          <br>
+          <p class="T-and-C">
+            By signing up you agree to our
+            <br>
+            <a href="">Terms and Privacy Policy</a>
+          </p>
+        </form>
+      </div>
       <div class="middle">
         <p>Have an account?
           <a href="">Log in</a>
@@ -70,7 +72,7 @@
       <li><a href="#">Language</a></li>
     </ul>
     <div class="right copyright ">
-      <p>&copy; 2018 Instagram</p>
+      <p>&copy; 2018 Instagram</p>
     </div>
   </div>
 
